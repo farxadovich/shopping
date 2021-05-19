@@ -1,15 +1,31 @@
-from django.http import HttpResponse
+
+from django.shortcuts import render, HttpResponse
 
 
 def index(request):
-    return HttpResponse("<strong>Hello, world. You're at the polls index.<strong>")
+    return HttpResponse('<a href="http://127.0.0.1:8000/second/">Birinchi sayt</a>'
+                        "<br><br><button>""<h5 style='text-shadow: 0 0 25px blue;'>"'<a href="//127.0.0.1:8000/second/">Next</a></button>')
 
 
-def test(request):
-    return HttpResponse("<a href='test/'>"
-                            "<button>"
-                                "<h1 style='text-shadow: 0 0 25px red;'>"
-                                    "Hello, world. You're at the polls index."
-                                "</h1>"
-                            "</button>"
-                        "</a>")
+def second(request):
+    return HttpResponse('<a href="http://127.0.0.1:8000/uch/">ikkinchi sayt</a>'
+                        "<br><br><button>""<h5 style='text-shadow: 0 0 25px blue;'>"'<a href="//127.0.0.1:8000/uch/">Next</a></button>')
+
+
+
+def uch(request):
+    return HttpResponse('<a href="http://127.0.0.1:8000/tort/">Uchinchi sayt</a>'
+                        "<br><br><button>""<h5 style='text-shadow: 0 0 25px blue;'>"'<a href="//127.0.0.1:8000/tort/">Next</a></button>')
+
+
+
+def tort(request):
+    return HttpResponse('<a href="http://127.0.0.1:8000/besh/">Tort sayt</a>'
+                        "<br><br><button>""<h5 style='text-shadow: 0 0 25px blue;'>"'<a href="//127.0.0.1:8000/besh/">Next</a></button>')
+
+def besh(request):
+    return HttpResponse('<a href="http://127.0.0.1:8000/">Besh sayt</a>'
+                        "<br><br><button>""<h3 style='text-shadow: 0 0 25px blue;'>"'<a href="//127.0.0.1:8000/">HOME</a></button>')
+
+
+
