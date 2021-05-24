@@ -1,3 +1,7 @@
 from django.contrib import admin
+from .models import Toifa, Mahsulot
 
-# Register your models here.
+
+admin.site.register(Mahsulot)
+admin.site.register(Toifa)
+
