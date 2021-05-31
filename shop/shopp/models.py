@@ -11,6 +11,6 @@ class Mahsulot(models.Model):
     tarif = models.TextField(null=True)
     soni = models.IntegerField(default=10)
     toifasi = models.ForeignKey(Toifa, on_delete=models.CASCADE)
-
+    rasm = models.ImageField(null=True)
 
 
